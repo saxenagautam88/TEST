@@ -1,0 +1,10 @@
+create table users(username varchar(50), password varchar(50));
+--------------------------------
+create table address(user_id number(10),
+STREET number(10),
+PINCODE	NUMBER(10),
+COUNTRY	VARCHAR2(4000),
+STATE	VARCHAR2(4000),
+PHONE_NUMBER number(10) ,
+foreign key(user_id) REFERENCES user_table(user_id)
+);
